@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+}
+
+form div {
+    width: 400px;
+    margin: 20px;
+}
+
+form div::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+form div label {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    text-align: right;
+    padding-right: 30px;
+}
+form div input {
+    width: 50%;
+    float: left;
+}
