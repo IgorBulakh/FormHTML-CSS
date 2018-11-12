@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+  <form>
+    <table>
+        <div>
+            <label for="">First name :</label>
+             <input type="text" placeholder="First name" name="from">
+        </div>
+        <div>
+            <label for="">Last name :</label>
+            <input type="text" placeholder="Last name" name="from1">
+        </div>
+        <!-- Gender (radio button) -->
+        <div>
+            <label for="">Gender :</label>
+            <input type="radio" name="gender">
+            <label for="" class="gender">m</label>
+            <input type="radio" name="gender">
+            <label for="" class="gender">w</label>    
+        </div>
+      <tr>
+        <td>Ваш пароль</td>
+        <td>
+          <input name="password" type="password">
+        </td>
+      </tr>
+      <tr>
+        <td>Повторите пароль</td>
+        <td>
+          <input name="password2" type="password">
+        </td>
+      </tr>
+      <!-- Country (select) -->
+        <div>
+            <label for="">Country :</label> 
+            <select name="to">
+                <option></option>
+                <option value="1">Ukraine</option>
+                <option value="2">USA</option>
+                <option value="3">Franse</option>
+            </select> 
+        </div>
+        <div>
+            <label for="">Email :</label>
+            <input type="email" placeholder="You email" name="meil">
+        </div>
+    </table>
+
+    Сообщение:
+    <label>
+      <textarea name="message" style="display:block;width:400px;height:80px"></textarea>
+    </label>
+
+    <input type="button" onclick="validate(this.form)" value="Проверить">
+  </form>
+
+
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
+
+
+<!-- <form>
+        <table>
+          <tr>
+            <td>От кого</td>
+            <td>
+              <input name="from" type="text">
+            </td>
+          </tr>
+          <tr>
+            <td>Ваш пароль</td>
+            <td>
+              <input name="password" type="password">
+            </td>
+          </tr>
+          <tr>
+            <td>Повторите пароль</td>
+            <td>
+              <input name="password2" type="password">
+            </td>
+          </tr>
+          <tr>
+            <td>Куда</td>
+            <td>
+              <select name="to">
+                <option></option>
+                <option value="1">Отдел снабжения</option>
+                <option value="2">Отдел разработки</option>
+                <option value="3">Директору</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+    
+        Сообщение:
+        <label>
+          <textarea name="message" style="display:block;width:400px;height:80px"></textarea>
+        </label>
+    
+        <input type="button" onclick="validate(this.form)" value="Проверить">
+      </form> -->
